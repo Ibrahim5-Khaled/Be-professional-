@@ -1,0 +1,265 @@
+/* styles.css */
+
+/* Reset CSS */
+html, body, ul, li, h1, h2, h3, p, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #EEE;
+  padding: 0px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  padding:20px 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 40px; /* يمكن تعديل هذا الارتفاع حسب الحاجة */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+    header .log {
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    top: -10px;
+    
+}
+header .k {
+   float: right; /* لجعل الصورة تطفو إلى اليسار */
+   width: 50px; /* تحديد عرض الصورة بالحجم المطلوب */
+   height: auto; /* السماح بتعديل الارتفاع تلقائيًا وفقًا لتناسب العرض */
+   margin-right: 15px; /* إضافة هامش عند الجانب الأيمن للصورة للتباعد بينها وبين العناصر الأخرى */
+}
+
+.dropdown .dropdown-menu {
+   display: none;
+   position: absolute;
+   background-color: #001C5C;
+  
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px;
+   z-index: 1;
+   width: 100vw;
+   right: 0; 
+   text-align: center;
+   border: none;
+   top: 100%;
+   transition: height 0.8s ease-in-out;
+}
+
+
+.dropdown .dropdown-menu li {
+   list-style-type: none; /* إزالة الترتيب */
+}
+
+.dropdown .dropdown-menu a {
+   display: block;
+   font-weight: bold; /* جعل النص عريضًا */
+   font-size: 16px; /* تعديل حجم النص */
+   text-decoration: none; /* إزالة التأثيرات النصية */
+    color: #FFFFFF;
+    line-height: 2.5;
+}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+   opacity: 1;
+   height: auto;
+}
+
+
+nav {
+    background-color: #f2f2f2; /* لون خلفية القائمة */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* الظل المرغوب */
+    margin-top:40px ;
+  }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: 30px;
+  align-items: center;
+  font-size: 10px;
+  border: 20px;
+  font-weight: bold;
+}
+
+nav ul li {
+  margin-right: 20px;
+  border-right: 1px solid #999; /* إضافة خط طولي بلون رمادي */
+  padding-right: 20px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+/* Hero Section Styles */
+.hero {
+  background-image: url('back.png');
+  background-size: cover;
+  background-position: center;
+  text-align: solid;
+  margin-top: 80px; 
+  padding: 100px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 0.7;
+}
+.be{
+   font-size: 50px;
+  text-indent: 80px;
+  line-height: 0.8;
+ -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: blue;
+  margin-top: 2px;
+}
+.pro{
+   text-indent: 80px;
+}
+.t{
+    text-align: center;
+    font-size: 20px;
+}
+/*.hero p {
+  font-size: 30px;
+  margin-bottom: 0px;
+  line-height: 0.7;
+}*/
+
+.button {
+  display: inline-block;
+  background-color: #7EBBFF;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left:60px;
+  border-radius: 10px;
+  
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+.but{
+  display: inline-block;
+  background-color: #E2D459;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: nnone
+  float:right ;
+  margin-right: 10px;
+  border-radius:10px;
+
+}
+
+.but:hover {
+  background-color: #666;
+}
+
+/* Services Section Styles */
+.services {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color:#D0D4CC ;
+}
+
+.test{ 
+     background-color: white;
+     padding: 10px;
+      margin: 25px 15px;
+     direction: rtl;
+     border-radius:10px;
+     font-family: 'Comic Sans MS', cursive;
+  font-size: 18px;
+  line-height: 1.6;
+     }
+ .test h2{
+     text-align: center;
+     color: #314BFF;
+ }
+ 
+.img2 {
+  display: flex;
+  align-items: center;
+}
+
+.img2 img {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    color: white;
+
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #999;
+     color: white;
+
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+    color: white;
+
+}
+
+.footer-links a:hover {
+  color: white;
+  font-weight: bold;
+  
+
+  
+}
+
+ .made{
+     background-color: white;
+     color: #1465F2;
+     text-align: center;
